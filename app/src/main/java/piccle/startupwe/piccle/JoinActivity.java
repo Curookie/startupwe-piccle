@@ -1,6 +1,7 @@
 package piccle.startupwe.piccle;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ public class JoinActivity extends AppCompatActivity {
     private Button numberAcceptedButton;
     private EditText AcceptingNumberEdit;
     private CustomDialog customDialog;
+    private Button nextBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class JoinActivity extends AppCompatActivity {
         emailAcceptButton = (Button) findViewById(R.id.emailAccept);
         numberAcceptButton = (Button) findViewById(R.id.numberAccept);
         numberAcceptedButton = (Button) findViewById(R.id.numberAccepted);
+        nextBtn = (Button)findViewById(R.id.btnNext);
 
         AcceptingNumberEdit = (EditText) findViewById(R.id.AcceptingNumber);
 
@@ -57,6 +60,13 @@ public class JoinActivity extends AppCompatActivity {
 
                 customDialog = new CustomDialog(JoinActivity.this);
                 customDialog.show();
+            }
+        });
+        nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JoinActivity.this, StartActivity.class);
+                startActivity(intent);
             }
         });
     }

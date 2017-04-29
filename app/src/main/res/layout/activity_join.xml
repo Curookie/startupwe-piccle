@@ -1,114 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_join"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="32dp"
+    android:background="#ff1fbca9"
+    android:paddingRight="32dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="piccle.startupwe.piccle.JoinActivity">
 
-    <TextView
-        android:text="이름"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewName"
-        />
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@mipmap/logojoin"
+        android:id="@+id/imageView3"
+        android:layout_height="140dp"
+        android:layout_marginBottom="50dp" />
 
     <EditText
-        android:hint="길동"
+        android:hint="이름"
         android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:paddingTop="10dp"
-        android:text="성"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewLastName"
-        />
+        android:singleLine="true"
+        android:textColorLink="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorHighlight="@android:color/white" />
 
     <EditText
-        android:hint="홍"
-        android:layout_width="wrap_content"
+        android:hint="성"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextLastName"
-        />
-
-    <TextView
-        android:paddingTop="10dp"
-        android:text="생년월일"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewDate"
-        />
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:textColorHint="@android:color/white"
+        android:textColorHighlight="@android:color/white" />
 
     <EditText
-        android:hint="2001.01.01"
-        android:layout_width="wrap_content"
+        android:hint="생년월일"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextDate"
-        />
-
-    <TextView
-        android:paddingTop="10dp"
-        android:text="이메일"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewEmail"
-        />
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorHighlight="@android:color/white" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <EditText
-            android:hint="startup@piccle.com"
-            android:layout_width="wrap_content"
+            android:hint="이메일"
             android:layout_height="wrap_content"
             android:id="@+id/editTextEmail"
             android:maxLength="30"
-            />
+            android:layout_width="270dp"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:textColorHint="@android:color/white"
+            android:textColorHighlight="@android:color/white" />
 
         <Button
             android:id="@+id/emailAccept"
-            android:text="인증하기"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="@mipmap/ijbtn"
+            android:layout_width="70dp"
+            android:layout_height="32dp" />
 
     </LinearLayout>
 
-
-    <TextView
-        android:paddingTop="10dp"
-        android:text="전화번호"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewNumber"
-        />
 
     <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
         <EditText
-            android:hint="010-1234-5678"
-            android:layout_width="wrap_content"
+            android:hint="전화번호"
             android:layout_height="wrap_content"
             android:id="@+id/editTextNumber"
             android:maxLength="15"
-            />
+            android:layout_width="270dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textColorHighlight="@android:color/white" />
 
         <Button
             android:id="@+id/numberAccept"
-            android:text="인증요청"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="@mipmap/askbtn"
+            android:layout_width="70dp"
+            android:layout_height="32dp" />
 
     </LinearLayout>
     <LinearLayout
@@ -116,19 +103,34 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:hint="xxxxxx"
-            android:layout_width="75dp"
+            android:hint="인증번호"
             android:layout_height="wrap_content"
             android:id="@+id/AcceptingNumber"
             android:maxLength="6"
-            />
+            android:layout_width="270dp"
+
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:textColorHint="@android:color/white"
+            android:textColorHighlight="@android:color/white" />
 
         <Button
             android:id="@+id/numberAccepted"
-            android:text="인증하기"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="@mipmap/ijbtn"
+            android:layout_width="70dp"
+            android:layout_height="32dp" />
+
+
 
     </LinearLayout>
+
+    <Button
+        android:background="@mipmap/nextbtn"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnNext"
+        android:elevation="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
 
 </LinearLayout>
