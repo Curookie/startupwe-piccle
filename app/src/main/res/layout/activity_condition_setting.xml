@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -29,7 +29,6 @@
                 android:layout_marginLeft="16dp"
                 android:inputType="textCapCharacters|textPersonName"
                 android:ems="10"
-                android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Date: "
                 android:singleLine="true" />
@@ -40,7 +39,6 @@
                 android:layout_marginLeft="16dp"
                 android:inputType="textCapCharacters|textPersonName"
                 android:ems="10"
-                android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Location: "
                 android:singleLine="true" />
@@ -51,7 +49,6 @@
                 android:layout_marginLeft="16dp"
                 android:inputType="textCapCharacters|textPersonName"
                 android:ems="10"
-                android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Time: "
                 android:singleLine="true" />
@@ -62,7 +59,6 @@
                 android:layout_marginLeft="16dp"
                 android:inputType="textCapCharacters|textPersonName"
                 android:ems="10"
-                android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Shots: "
                 android:singleLine="true" />
@@ -73,7 +69,6 @@
                 android:layout_marginLeft="16dp"
                 android:inputType="textCapCharacters|textPersonName"
                 android:ems="10"
-                android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Cost: "
                 android:singleLine="true" />
@@ -104,7 +99,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginLeft="16dp"
-                        android:id="@+id/editText"
                         android:layout_weight="1"
                         android:text="Country: "
                         android:singleLine="true" />
@@ -113,7 +107,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginLeft="16dp"
-                        android:id="@+id/editText"
                         android:layout_weight="1"
                         android:text="City: "
                         android:singleLine="true" />
@@ -122,7 +115,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginLeft="16dp"
-                        android:id="@+id/editText"
                         android:layout_weight="1"
                         android:text="Pin point: "
                         android:singleLine="true" />
@@ -162,10 +154,17 @@
                 android:layout_width="250dp"
                 android:layout_height="80dp"
                 android:id="@+id/costSpinner"/>
+
         </LinearLayout>
+
+
     </LinearLayout>
 
+     <Button
+         android:text="설정완료"
 
+         android:id="@+id/conditionSettingButton"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
 
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

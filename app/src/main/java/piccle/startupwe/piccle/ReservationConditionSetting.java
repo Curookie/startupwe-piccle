@@ -1,8 +1,11 @@
 package piccle.startupwe.piccle;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Spinner;
 import android.app.DatePickerDialog;
@@ -13,6 +16,7 @@ import android.widget.Toast;
 
 public class ReservationConditionSetting extends AppCompatActivity {
     private Spinner shootSelection, countrySelection, citySelection, pinPointSelection, costSelection;
+    private Button BconditionSetting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +40,14 @@ public class ReservationConditionSetting extends AppCompatActivity {
         citySelection.setAdapter(cityAdapter);
         pinPointSelection.setAdapter(pinPointAdapter);
         costSelection.setAdapter(costAdapter);
+
+        BconditionSetting = (Button) findViewById(R.id.conditionSettingButton);
+        BconditionSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ReservationConditionSetting.this, ShowGiverListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

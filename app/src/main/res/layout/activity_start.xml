@@ -25,7 +25,7 @@
 
             <ImageView
                 android:layout_width="360dp"
-                app:srcCompat="@mipmap/img_give"
+                android:background="@mipmap/img_give"
                 android:id="@+id/btnGive"
                 android:layout_height="270dp"
                 android:layout_gravity="center"/>
@@ -57,7 +57,7 @@
             <ImageView
                 android:layout_width="360dp"
                 android:layout_height="270dp"
-                app:srcCompat="@mipmap/img_take"
+                android:background="@mipmap/img_take"
                 android:id="@+id/btnTake"
                 android:layout_gravity="center"
                 />

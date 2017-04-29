@@ -70,6 +70,7 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/ask"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:text="신청하기"
