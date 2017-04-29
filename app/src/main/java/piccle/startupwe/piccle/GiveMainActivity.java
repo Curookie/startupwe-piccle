@@ -1,6 +1,9 @@
 package piccle.startupwe.piccle;
 
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TabHost;
@@ -11,6 +14,7 @@ public class GiveMainActivity extends AppCompatActivity {
     TabHost.TabSpec TabSpec;
     Drawable imgIcon = null;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,14 +23,21 @@ public class GiveMainActivity extends AppCompatActivity {
         TabHost=  (TabHost)findViewById(R.id.tabhost);
         TabHost.setup();
 
-        TabSpec= TabHost.newTabSpec("Message").setIndicator("메세지").setContent(R.id.tab1);
+        imgIcon = getResources().getDrawable(R.mipmap.btnaa, getTheme());
+        TabSpec= TabHost.newTabSpec("Message").setIndicator("",imgIcon).setContent(R.id.tab1);
         TabHost.addTab(TabSpec);
 
-        TabSpec= TabHost.newTabSpec("Plan").setIndicator("일정").setContent(R.id.tab1);
+        imgIcon = getResources().getDrawable(R.mipmap.btnbb, getTheme());
+        TabSpec= TabHost.newTabSpec("Plan").setIndicator("",imgIcon).setContent(R.id.tab2);
         TabHost.addTab(TabSpec);
 
-        TabSpec= TabHost.newTabSpec("Setting").setIndicator("설정").setContent(R.id.tab1);
+        imgIcon = getResources().getDrawable(R.mipmap.btncc, getTheme());
+        TabSpec= TabHost.newTabSpec("Setting").setIndicator("",imgIcon).setContent(R.id.tab3);
         TabHost.addTab(TabSpec);
+
+        TabHost.getTabWidget().getChildAt(0).setBackgroundColor(Color.parseColor("#00CFB5"));
+        TabHost.getTabWidget().getChildAt(1).setBackgroundColor(Color.parseColor("#aaaaaa"));
+        TabHost.getTabWidget().getChildAt(2).setBackgroundColor(Color.parseColor("#aaaaaa"));
 
         TabHost.setCurrentTab(0);
     }

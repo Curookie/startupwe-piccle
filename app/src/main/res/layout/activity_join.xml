@@ -127,10 +127,10 @@
     <Button
         android:background="@mipmap/nextbtn"
         android:layout_width="70dp"
-        android:layout_height="40dp"
         android:id="@+id/btnNext"
         android:elevation="1dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:layout_height="35dp" />
 
 </LinearLayout>
