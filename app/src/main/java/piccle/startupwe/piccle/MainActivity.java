@@ -9,6 +9,12 @@ import android.widget.AdapterView;
 import android.widget.Gallery;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
     static TextView mDotsText[];
@@ -26,6 +32,26 @@ public class MainActivity extends AppCompatActivity {
         Gallery gallery = (Gallery)findViewById(R.id.gallery);
         gallery.setAdapter(new ImageAdapter(this));
 
+        Button loginButton = (Button) findViewById(R.id.loginButton);
+        Button startButton = (Button) findViewById(R.id.startButton);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+                //intent.putExtra("CafeData",arrData.get(position));
+            }
+        });
+
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StartActivity.class);
+                startActivity(intent);
+                //intent.putExtra("CafeData",arrData.get(position));
+            }
+        });
 
         mDotsLayout = (LinearLayout)findViewById(R.id.image_count);
         //here we count the number of images we have to know how many dots we need
@@ -63,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView adapterView) {
-
             }
         });
     }

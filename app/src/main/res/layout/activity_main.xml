@@ -35,19 +35,22 @@
     </LinearLayout>
 
     <Button
-        android:text="시작하기"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnStart"
-        android:layout_margin="@dimen/activity_vertical_margin"/>
-
-    <Button
         android:text="로그인"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_vertical_margin"
-        android:layout_marginRight="@dimen/activity_vertical_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:id="@+id/btnLogin" />
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/loginButton" />
+
+    <Button
+        android:text="시작하기"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/startButton" />
 
 </LinearLayout>
