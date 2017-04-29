@@ -2,9 +2,12 @@ package piccle.startupwe.piccle;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 /**
  * Created by alsrn on 2017-04-29.
@@ -26,5 +29,14 @@ public class CustomDialog extends Dialog {
         getWindow().setAttributes(lpWindow);
         setCanceledOnTouchOutside(false);
         setContentView(R.layout.custom_dialog);
+
+        Button loginCheckedButton = (Button) findViewById(R.id.loginChecked);
+        loginCheckedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), StartActivity.class);
+                getContext().startActivity(intent);
+            }
+        });
     }
 }

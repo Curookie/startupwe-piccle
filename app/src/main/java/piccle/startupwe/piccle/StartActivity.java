@@ -29,8 +29,8 @@ public class StartActivity extends AppCompatActivity {
         btnTake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(StartActivity.this, Take.class);
-//                startActivity(intent);
+                Intent intent = new Intent(StartActivity.this, TakeMypageActivity.class);
+                startActivity(intent);
             }
         });
 
