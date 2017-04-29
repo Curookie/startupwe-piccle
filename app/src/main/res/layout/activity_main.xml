@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,59 +8,31 @@
     android:orientation="vertical"
     android:padding="0dp">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-
-        <!-- This is the Gallery -->
-
-
-        <Gallery xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/gallery"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-
-        <!-- This LinearLayout if for the dots -->
-
-
-    </FrameLayout>
-
-    <LinearLayout android:id="@+id/image_count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:background="#00000000">
-    </LinearLayout>
 
     <Button
-        android:text="페이스북 로그인"
         android:layout_centerHorizontal="true"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/joinButton"
         android:layout_marginBottom="15dp"
         android:id="@+id/startButton" />
 
     <Button
-        android:text="가입하기"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_above="@+id/loginButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:id="@+id/joinButton" />
 
     <Button
-        android:text="로그인"
-        android:background="#00ff0000"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:textSize="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         android:id="@+id/loginButton" />
 
-</LinearLayout>
+</RelativeLayout>

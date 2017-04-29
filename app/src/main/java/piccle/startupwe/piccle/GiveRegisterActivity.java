@@ -15,6 +15,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
+//import static piccle.startupwe.piccle.R.drawable.img_1;
+
 public class GiveRegisterActivity extends AppCompatActivity {
 
     private ImageView giverImg;
@@ -46,9 +48,9 @@ public class GiveRegisterActivity extends AppCompatActivity {
     private class ImageAdapter extends BaseAdapter {
         private Context mContext;
         private Integer[] mThumbIds = {
-                R.drawable.img_1, R.drawable.img_2, R.drawable.img_3,
-                R.drawable.img_4, R.drawable.img_5, R.drawable.img_6,
-                R.drawable.img_7, R.drawable.img_8, R.drawable.img_9
+                R.mipmap.img_1, R.mipmap.img_2, R.mipmap.img_3,
+                R.mipmap.img_4, R.mipmap.img_5, R.mipmap.img_6,
+                R.mipmap.img_7, R.mipmap.img_8, R.mipmap.img_9
         };
 
 
