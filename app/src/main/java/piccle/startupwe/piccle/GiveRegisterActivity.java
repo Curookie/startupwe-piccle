@@ -33,8 +33,8 @@ public class GiveRegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_give_register);
 
         giverImg = (ImageView)findViewById(R.id.imageView);
-        objGridView = (GridView)findViewById(R.id.gridView1);
-        objGridView.setAdapter(new ImageAdapter(this));
+//        objGridView = (GridView)findViewById(R.id.gridView1);
+//        objGridView.setAdapter(new ImageAdapter(this));
         Donebtn = (Button)findViewById(R.id.btnDone);
 
         Donebtn.setOnClickListener(new View.OnClickListener() {
@@ -48,11 +48,11 @@ public class GiveRegisterActivity extends AppCompatActivity {
 //        giverImg.setBackground(new ShapeDrawable(new OvalShape()));
 //        giverImg.setClipToOutline(true);
 
-        cameraSelect = (Spinner)findViewById(R.id.spinner1);
+//        cameraSelect = (Spinner)findViewById(R.id.spinner1);
 
 //        cameraSelect.setPrompt(getResources().getString(R.string.));
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.spinnerArray, android.R.layout.simple_spinner_item);
-        cameraSelect.setAdapter(adapter);
+//        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.spinnerArray, android.R.layout.simple_spinner_item);
+//        cameraSelect.setAdapter(adapter);
 
 
     }

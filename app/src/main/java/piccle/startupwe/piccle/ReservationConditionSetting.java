@@ -3,6 +3,7 @@ package piccle.startupwe.piccle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Spinner;
 import android.app.DatePickerDialog;
@@ -26,16 +27,16 @@ public class ReservationConditionSetting extends AppCompatActivity {
         pinPointSelection = (Spinner)findViewById(R.id.pinPointSpinner);
         costSelection = (Spinner) findViewById(R.id.costSpinner);
 
-        ArrayAdapter shootAdapter = ArrayAdapter.createFromResource(this, R.array.shootArray, android.R.layout.simple_spinner_dropdown_item);
-        ArrayAdapter countryAdapter = ArrayAdapter.createFromResource(this, R.array.countryArray, android.R.layout.simple_spinner_dropdown_item);
-        ArrayAdapter cityAdapter = ArrayAdapter.createFromResource(this, R.array.cityArray, android.R.layout.simple_spinner_dropdown_item);
-        ArrayAdapter pinPointAdapter = ArrayAdapter.createFromResource(this, R.array.pinPointArray, android.R.layout.simple_spinner_dropdown_item);
-        ArrayAdapter costAdapter = ArrayAdapter.createFromResource(this, R.array.costArray, android.R.layout.simple_spinner_dropdown_item);
+//        ArrayAdapter shootAdapter = ArrayAdapter.createFromResource(this, R.array.shootArray, android.R.layout.simple_spinner_dropdown_item);
+//        ArrayAdapter countryAdapter = ArrayAdapter.createFromResource(this, R.array.countryArray, android.R.layout.simple_spinner_dropdown_item);
+//        ArrayAdapter cityAdapter = ArrayAdapter.createFromResource(this, R.array.cityArray, android.R.layout.simple_spinner_dropdown_item);
+//        ArrayAdapter pinPointAdapter = ArrayAdapter.createFromResource(this, R.array.pinPointArray, android.R.layout.simple_spinner_dropdown_item);
+//        ArrayAdapter costAdapter = ArrayAdapter.createFromResource(this, R.array.costArray, android.R.layout.simple_spinner_dropdown_item);
 
-        shootSelection.setAdapter(shootAdapter);
-        countrySelection.setAdapter(countryAdapter);
-        citySelection.setAdapter(cityAdapter);
-        pinPointSelection.setAdapter(pinPointAdapter);
-        costSelection.setAdapter(costAdapter);
+//        shootSelection.setAdapter(shootAdapter);
+//        countrySelection.setAdapter(countryAdapter);
+//        citySelection.setAdapter(cityAdapter);
+//        pinPointSelection.setAdapter(pinPointAdapter);
+//        costSelection.setAdapter(costAdapter);
     }
 }
