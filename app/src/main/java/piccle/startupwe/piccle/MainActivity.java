@@ -27,10 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RelativeLayout background = (RelativeLayout) findViewById(R.id.activity_main);
-
-        background.setBackgroundResource(R.drawable.);
-
+        Gallery gallery = (Gallery)findViewById(R.id.gallery);
+        gallery.setAdapter(new ImageAdapter(this));
 
         loginButton = (Button) findViewById(R.id.loginButton);
         startButton = (Button) findViewById(R.id.startButton);
@@ -61,6 +59,17 @@ public class MainActivity extends AppCompatActivity {
 //                Intent intent = new Intent(MainActivity.this, StartActivity.class);
 //                startActivity(intent);
                 //intent.putExtra("CafeData",arrData.get(position));
+            }
+        });
+
+        gallery.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView adapterView, View view, int pos, long l) {
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView adapterView) {
+
             }
         });
 

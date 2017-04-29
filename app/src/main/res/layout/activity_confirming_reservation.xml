@@ -7,7 +7,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        app:srcCompat="@drawable/img_7"
+        app:srcCompat="@mipmap/img_7"
         android:id="@+id/imageView"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -26,7 +26,7 @@
             android:text="Send"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:id="@+id/btnSetting"
+            android:id="@+id/btnSend"
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAlignment="center"/>
