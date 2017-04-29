@@ -52,14 +52,14 @@ public class ShowGiverListActivity extends AppCompatActivity {
                 linearLayout.setBackgroundResource(R.mipmap.img_listphone);
             }
         });
-        /*
+
         portfolio1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 porfolioDialog = new PorfolioDialog(ShowGiverListActivity.this);
                 porfolioDialog.show();
             }
-        });*/
+        });
 
 
     }

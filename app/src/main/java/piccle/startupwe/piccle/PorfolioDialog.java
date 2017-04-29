@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 
 
 public class PorfolioDialog extends Dialog {
@@ -24,7 +25,19 @@ public class PorfolioDialog extends Dialog {
         lpWindow.dimAmount = 0.8f;
         getWindow().setAttributes(lpWindow);
         setCanceledOnTouchOutside(false);
-        setContentView(R.layout.custom_dialog);
+        setContentView(R.layout.activity_portfolio_dialog);
+
+        ImageView portfolioDetail = (ImageView)findViewById(R.id.portfolioDetail);
+        portfolioDetail.setClickable(true);
+
+        portfolioDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), LoginActivity.class);
+                getContext().startActivity(intent);
+            }
+        });
+
     }
 }
 
