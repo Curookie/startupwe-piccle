@@ -10,6 +10,7 @@ import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.widget.NumberPicker;
 import android.widget.Toast;
+import android.widget.Button;
 
 
 public class ReservationConditionSetting extends AppCompatActivity {
