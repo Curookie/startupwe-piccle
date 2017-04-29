@@ -41,8 +41,7 @@
         android:layout_marginRight="40dp"
         android:layout_width="fill_parent"
         android:layout_height="2dip"
-        android:background="#FF00CFB5"
-        />
+        android:background="#FF00CFB5"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -62,7 +61,6 @@
                 android:id="@+id/btnTake"
                 android:layout_gravity="center"
                 />
-
         </LinearLayout>
 
     </FrameLayout>

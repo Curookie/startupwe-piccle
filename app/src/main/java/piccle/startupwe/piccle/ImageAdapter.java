@@ -9,8 +9,6 @@ import android.widget.ImageView;
 
 import piccle.startupwe.piccle.R;
 
-import static piccle.startupwe.piccle.R.drawable.a;
-
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
 
