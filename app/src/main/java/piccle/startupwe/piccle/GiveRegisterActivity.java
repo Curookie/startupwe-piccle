@@ -21,7 +21,7 @@ public class GiveRegisterActivity extends AppCompatActivity {
     private Spinner cameraSelect;
     private GridView objGridView;
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+//    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +31,8 @@ public class GiveRegisterActivity extends AppCompatActivity {
         objGridView = (GridView)findViewById(R.id.gridView1);
         objGridView.setAdapter(new ImageAdapter(this));
 
-        giverImg.setBackground(new ShapeDrawable(new OvalShape()));
-        giverImg.setClipToOutline(true);
+//        giverImg.setBackground(new ShapeDrawable(new OvalShape()));
+//        giverImg.setClipToOutline(true);
 
         cameraSelect = (Spinner)findViewById(R.id.spinner1);
 
