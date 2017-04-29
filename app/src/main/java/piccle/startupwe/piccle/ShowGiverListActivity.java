@@ -16,6 +16,7 @@ public class ShowGiverListActivity extends AppCompatActivity {
 
         mListView = (ListView) findViewById(R.id.showGiverListView);
         mAdapter = new ListViewAdapter(this);
+        mListView.setAdapter(mAdapter);
 
         mAdapter.addItem(getResources().getDrawable(R.drawable.noprofile), "홍", "길동");
         mAdapter.addItem(getResources().getDrawable(R.drawable.noprofile), "김", "길동");
