@@ -40,5 +40,24 @@ public class GiveMainActivity extends AppCompatActivity {
         TabHost.getTabWidget().getChildAt(2).setBackgroundColor(Color.parseColor("#aaaaaa"));
 
         TabHost.setCurrentTab(0);
+
+        TabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+            @Override
+            public void onTabChanged(String s) {
+                if(s=="Message") {
+                    TabHost.getTabWidget().getChildAt(0).setBackgroundColor(Color.parseColor("#00CFB5"));
+                    TabHost.getTabWidget().getChildAt(1).setBackgroundColor(Color.parseColor("#aaaaaa"));
+                    TabHost.getTabWidget().getChildAt(2).setBackgroundColor(Color.parseColor("#aaaaaa"));
+                } else if(s=="Plan") {
+                    TabHost.getTabWidget().getChildAt(0).setBackgroundColor(Color.parseColor("#aaaaaa"));
+                    TabHost.getTabWidget().getChildAt(1).setBackgroundColor(Color.parseColor("#00CFB5"));
+                    TabHost.getTabWidget().getChildAt(2).setBackgroundColor(Color.parseColor("#aaaaaa"));
+                } else if(s=="Setting") {
+                    TabHost.getTabWidget().getChildAt(0).setBackgroundColor(Color.parseColor("#aaaaaa"));
+                    TabHost.getTabWidget().getChildAt(1).setBackgroundColor(Color.parseColor("#aaaaaa"));
+                    TabHost.getTabWidget().getChildAt(2).setBackgroundColor(Color.parseColor("#00CFB5"));
+                }
+            }
+        });
     }
 }
