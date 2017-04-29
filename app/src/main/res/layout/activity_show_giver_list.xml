@@ -30,6 +30,13 @@
                 android:layout_width="20dp" />
         </FrameLayout>
 
+        <View
+            android:layout_width="1dip"
+            android:layout_height="40dp"
+            android:background="#FFFFFFFF"
+            />
+
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -39,7 +46,7 @@
                 android:id="@+id/dslrB"
                 android:background="@mipmap/img_dlsr"
                 android:layout_width="30dp"
-                android:layout_height="25dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center_vertical|center" />
         </FrameLayout>
 
@@ -53,15 +60,15 @@
         android:layout_width="70dp"
         android:layout_gravity="right"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:textColor="@android:color/white" />
 
     <ImageView
         android:id="@+id/portfolioView1"
 	    android:background="@mipmap/firstimg1"
         android:layout_width="match_parent"
-        android:layout_marginBottom="80dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginTop="18dp"
         android:layout_height="130dp" />
 
     <Button
@@ -72,8 +79,8 @@
         android:layout_width="70dp"
         android:layout_gravity="right"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp" />
+        android:layout_marginBottom="18dp"
+        android:textColor="@android:color/white"/>
 
     <ImageView
         android:id="@+id/portfolioView2"
