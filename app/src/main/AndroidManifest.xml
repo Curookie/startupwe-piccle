@@ -9,6 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+<<<<<<< HEAD
+=======
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+>>>>>>> 5d8b8bf281c8f74f2015af544cca67d10053a3a2
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".StartActivity" ></activity>
@@ -18,12 +25,17 @@
         </activity>
         <activity android:name=".MakingReservationActivity" />
         <activity android:name=".ConfirmingReservation"></activity>
+<<<<<<< HEAD
         <activity android:name=".ReservationConditionSetting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+=======
+        <activity android:name=".ReservationConditionSetting"></activity>
+        <activity android:name=".GiveMainActivity"></activity>
+        <activity android:name=".TakeMypageActivity" />
+        <activity android:name=".ShowGiverListActivity">
+>>>>>>> 5d8b8bf281c8f74f2015af544cca67d10053a3a2
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".GiveMainActivity"></activity>
         <activity android:name=".TakeMypageActivity" />
