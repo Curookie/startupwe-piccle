@@ -19,6 +19,7 @@
         <activity android:name=".StartActivity" />
         <activity android:name=".JoinActivity" />
         <activity android:name=".GiveRegisterActivity" />
+        <activity android:name=".GiveMainActivity"></activity>
     </application>
 
 </manifest>
