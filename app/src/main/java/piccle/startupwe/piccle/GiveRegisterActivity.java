@@ -57,46 +57,46 @@ public class GiveRegisterActivity extends AppCompatActivity {
 
     }
 
-    private class ImageAdapter extends BaseAdapter {
-        private Context mContext;
-        private Integer[] mThumbIds = {
-                R.mipmap.img_1, R.mipmap.img_2, R.mipmap.img_3,
-                R.mipmap.img_4, R.mipmap.img_5, R.mipmap.img_6,
-                R.mipmap.img_7, R.mipmap.img_8, R.mipmap.img_9
-        };
-
-
-        public ImageAdapter(Context objC) {
-            mContext = objC;
-        }
-
-        public int getCount() {
-            return mThumbIds.length;
-        }
-
-        public Object getItem(int position) {
-            return null;
-        }
-
-        public long getItemId(int position) {
-            return 0;
-        }
-
-        public View getView(int position, View convertView, ViewGroup parent) {
-            ImageView objImgView;
-
-            if (convertView == null)
-
-            {
-                objImgView = new ImageView(mContext);
-                objImgView.setLayoutParams(new GridView.LayoutParams(355, 260));
-                objImgView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                objImgView.setPadding(2, 2, 2, 2);
-            } else {
-                objImgView = (ImageView) convertView;
-            }
-            objImgView.setImageResource(mThumbIds[position]);
-            return objImgView;
-        }
-    }
+//    private class ImageAdapter extends BaseAdapter {
+//        private Context mContext;
+//        private Integer[] mThumbIds = {
+//                R.mipmap.img_1, R.mipmap.img_2, R.mipmap.img_3,
+//                R.mipmap.img_4, R.mipmap.img_5, R.mipmap.img_6,
+//                R.mipmap.img_7, R.mipmap.img_8, R.mipmap.img_9
+//        };
+//
+//
+//        public ImageAdapter(Context objC) {
+//            mContext = objC;
+//        }
+//
+//        public int getCount() {
+//            return mThumbIds.length;
+//        }
+//
+//        public Object getItem(int position) {
+//            return null;
+//        }
+//
+//        public long getItemId(int position) {
+//            return 0;
+//        }
+//
+//        public View getView(int position, View convertView, ViewGroup parent) {
+//            ImageView objImgView;
+//
+//            if (convertView == null)
+//
+//            {
+//                objImgView = new ImageView(mContext);
+//                objImgView.setLayoutParams(new GridView.LayoutParams(355, 260));
+//                objImgView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+//                objImgView.setPadding(2, 2, 2, 2);
+//            } else {
+//                objImgView = (ImageView) convertView;
+//            }
+//            objImgView.setImageResource(mThumbIds[position]);
+//            return objImgView;
+//        }
+//    }
 }

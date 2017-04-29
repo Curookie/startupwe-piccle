@@ -1,7 +1,9 @@
 package piccle.startupwe.piccle;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -15,7 +17,8 @@ import android.widget.Button;
 
 public class ReservationConditionSetting extends AppCompatActivity {
     private Spinner shootSelection, countrySelection, citySelection, pinPointSelection, costSelection;
-    private Button BconditionSetting;
+    private Button BconditionSetting, btnSearch;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +30,21 @@ public class ReservationConditionSetting extends AppCompatActivity {
         citySelection = (Spinner)findViewById(R.id.citySpinner);
         pinPointSelection = (Spinner)findViewById(R.id.pinPointSpinner);
         costSelection = (Spinner) findViewById(R.id.costSpinner);
+        btnSearch = (Button)findViewById(R.id.btnSearch) ;
 
         ArrayAdapter shootAdapter = ArrayAdapter.createFromResource(this, R.array.shootArray, android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter countryAdapter = ArrayAdapter.createFromResource(this, R.array.countryArray, android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter cityAdapter = ArrayAdapter.createFromResource(this, R.array.cityArray, android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter pinPointAdapter = ArrayAdapter.createFromResource(this, R.array.pinPointArray, android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter costAdapter = ArrayAdapter.createFromResource(this, R.array.costArray, android.R.layout.simple_spinner_dropdown_item);
+
+        btnSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ReservationConditionSetting.this, ShowGiverListActivity.class);
+                startActivity(intent);
+            }
+        });
 
         shootSelection.setAdapter(shootAdapter);
         countrySelection.setAdapter(countryAdapter);

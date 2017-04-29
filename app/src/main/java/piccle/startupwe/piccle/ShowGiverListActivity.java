@@ -1,5 +1,6 @@
 package piccle.startupwe.piccle;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ public class ShowGiverListActivity extends AppCompatActivity {
 //    private ListView mListView = null;
 //    private ListViewAdapter mAdapter = null;
     Button bDslr;
-    Button bPhone;
+    Button bPhone, btnSelect1, btnSelect2;
     PorfolioDialog porfolioDialog;
 
     @Override
@@ -34,6 +35,8 @@ public class ShowGiverListActivity extends AppCompatActivity {
 
         bDslr = (Button) findViewById(R.id.dslrB);
         bPhone = (Button) findViewById(R.id.phoneB);
+        btnSelect1 = (Button)findViewById(R.id.btnSelect1);
+        btnSelect2 = (Button)findViewById(R.id.btnSelect2);
 
         ImageView portfolio1 = (ImageView) findViewById(R.id.portfolioView1);
         ImageView portfolio2 = (ImageView) findViewById(R.id.portfolioView2);
@@ -50,6 +53,22 @@ public class ShowGiverListActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 linearLayout.setBackgroundResource(R.mipmap.img_listphone);
+            }
+        });
+
+        btnSelect1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ShowGiverListActivity.this, giverSelectedActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSelect2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ShowGiverListActivity.this, giverSelectedActivity.class);
+                startActivity(intent);
             }
         });
 

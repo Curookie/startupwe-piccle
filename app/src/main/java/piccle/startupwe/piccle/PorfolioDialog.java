@@ -33,7 +33,7 @@ public class PorfolioDialog extends Dialog {
         portfolioDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), LoginActivity.class);
+                Intent intent = new Intent(getContext(), giverSelectedActivity.class);
                 getContext().startActivity(intent);
             }
         });

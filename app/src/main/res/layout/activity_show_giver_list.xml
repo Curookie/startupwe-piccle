@@ -54,7 +54,7 @@
 
     <Button
         android:text="선택"
-        android:id="@+id/btnSelect"
+        android:id="@+id/btnSelect1"
         android:background="#00CFB5"
         android:layout_height="20dp"
         android:layout_width="70dp"
@@ -73,7 +73,7 @@
 
     <Button
         android:text="선택"
-        android:id="@+id/button2"
+        android:id="@+id/btnSelect2"
         android:background="#00CFB5"
         android:layout_height="20dp"
         android:layout_width="70dp"

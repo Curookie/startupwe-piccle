@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,9 +7,18 @@
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#00CFB5"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="piccle.startupwe.piccle.ReservationConditionSetting">
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@mipmap/logojoin"
+        android:id="@+id/imageView5"
+        android:layout_weight="1"
+        android:layout_height="180dp"
+        android:layout_marginBottom="20dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -32,7 +41,11 @@
                 android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Date: "
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textColorHighlight="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,7 +56,11 @@
                 android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Location: "
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textColorHighlight="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -54,7 +71,11 @@
                 android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Time: "
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textColorHighlight="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -65,7 +86,11 @@
                 android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Shots: "
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textColorHighlight="@android:color/white" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -76,7 +101,11 @@
                 android:id="@+id/editText"
                 android:layout_weight="1"
                 android:text="Cost: "
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textColorHighlight="@android:color/white" />
         </LinearLayout>
 
         <LinearLayout
@@ -88,8 +117,8 @@
                 android:id="@+id/datepicker"
                 android:layout_width="250dp"
                 android:layout_height="100dp"
-                android:calendarViewShown="false"
-                android:spinnersShown="true"/>
+                android:spinnersShown="true"
+                android:calendarViewShown="false" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -107,7 +136,11 @@
                         android:id="@+id/editText"
                         android:layout_weight="1"
                         android:text="Country: "
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorLink="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -116,7 +149,11 @@
                         android:id="@+id/editText"
                         android:layout_weight="1"
                         android:text="City: "
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorLink="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -125,7 +162,11 @@
                         android:id="@+id/editText"
                         android:layout_weight="1"
                         android:text="Pin point: "
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorLink="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -163,9 +204,17 @@
                 android:layout_height="80dp"
                 android:id="@+id/costSpinner"/>
         </LinearLayout>
+
+
     </LinearLayout>
 
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnSearch"
+        android:layout_gravity="center"
+        android:background="@mipmap/nextbtn" />
 
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
