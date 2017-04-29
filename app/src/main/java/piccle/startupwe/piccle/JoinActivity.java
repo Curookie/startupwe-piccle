@@ -16,16 +16,22 @@ import java.util.Random;
 
 public class JoinActivity extends AppCompatActivity {
 
+    private Button emailAcceptButton;
+    private Button numberAcceptButton;
+    private Button numberAcceptedButton;
+    private EditText AcceptingNumberEdit;
+    private CustomDialog customDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
 
-        Button emailAcceptButton = (Button) findViewById(R.id.emailAccept);
-        Button numberAcceptButton = (Button) findViewById(R.id.numberAccept);
-        Button numberAcceptedButton = (Button) findViewById(R.id.numberAccepted);
+        emailAcceptButton = (Button) findViewById(R.id.emailAccept);
+        numberAcceptButton = (Button) findViewById(R.id.numberAccept);
+        numberAcceptedButton = (Button) findViewById(R.id.numberAccepted);
 
-        final EditText AcceptingNumberEdit = (EditText) findViewById(R.id.AcceptingNumber);
+        AcceptingNumberEdit = (EditText) findViewById(R.id.AcceptingNumber);
 
         emailAcceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,9 +55,7 @@ public class JoinActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "핸드폰 인증이 완료되었습니다.", Toast.LENGTH_SHORT).show();
 
-                CustomDialog customDialog = new CustomDialog(JoinActivity.this);
-
-
+                customDialog = new CustomDialog(JoinActivity.this);
                 customDialog.show();
             }
         });

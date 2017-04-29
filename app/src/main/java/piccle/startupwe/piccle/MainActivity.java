@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     private int mDotsCount;
     private LinearLayout mDotsLayout;
 
+    private Button loginButton;
+    private Button startButton;
+    private Button joinButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -32,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         Gallery gallery = (Gallery)findViewById(R.id.gallery);
         gallery.setAdapter(new ImageAdapter(this));
 
-        Button loginButton = (Button) findViewById(R.id.loginButton);
-        Button startButton = (Button) findViewById(R.id.startButton);
-        Button joinButton = (Button) findViewById(R.id.joinButton);
+        loginButton = (Button) findViewById(R.id.loginButton);
+        startButton = (Button) findViewById(R.id.startButton);
+        joinButton = (Button) findViewById(R.id.joinButton);
 
         joinButton.setOnClickListener(new View.OnClickListener() {
             @Override
