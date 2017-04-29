@@ -9,3 +9,4 @@
 ./idea/modules.xml
 /build.gradle
 /app/build.gradle
+.gradle/*
