@@ -46,14 +46,14 @@
     </LinearLayout>
 
     <ImageView
-        android:background="@mipmap/img_frag1"
+        android:background="@mipmap/firstimg1"
         android:layout_width="match_parent"
         android:layout_marginBottom="110dp"
         android:layout_marginTop="110dp"
         android:layout_height="130dp" />
 
     <ImageView
-        android:background="@mipmap/img_frag2"
+        android:background="@mipmap/secondimgs"
         android:layout_width="wrap_content"
         android:layout_height="130dp" />
 
