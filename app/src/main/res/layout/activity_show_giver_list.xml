@@ -24,11 +24,13 @@
         android:layout_height="30dp" />
 
     <ImageView
+        android:id="@+id/portfolioView1"
         android:background="@mipmap/img_frag1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <ImageView
+        android:id="@+id/portfolioView2"
         android:background="@mipmap/img_frag2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

@@ -1,11 +1,13 @@
 package piccle.startupwe.piccle;
 
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ImageView;
 
 public class ShowGiverListActivity extends AppCompatActivity {
 
@@ -13,6 +15,7 @@ public class ShowGiverListActivity extends AppCompatActivity {
 //    private ListViewAdapter mAdapter = null;
     Button bDslr;
     Button bPhone;
+    PorfolioDialog porfolioDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,11 @@ public class ShowGiverListActivity extends AppCompatActivity {
         bDslr = (Button) findViewById(R.id.dslrB);
         bPhone = (Button) findViewById(R.id.phoneB);
 
+        ImageView portfolio1 = (ImageView) findViewById(R.id.portfolioView1);
+        ImageView portfolio2 = (ImageView) findViewById(R.id.portfolioView2);
+        portfolio1.setClickable(true);
+        portfolio2.setClickable(true);
+
         bDslr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,6 +52,14 @@ public class ShowGiverListActivity extends AppCompatActivity {
                 linearLayout.setBackgroundResource(R.mipmap.img_listphone);
             }
         });
+        /*
+        portfolio1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                porfolioDialog = new PorfolioDialog(ShowGiverListActivity.this);
+                porfolioDialog.show();
+            }
+        });*/
 
 
     }
