@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerArray">
+        <item>[카메라 기종]</item>
+        <item>iPhone 7</item>
+        <item>Galaxy 8</item>
+        <item>DSLR</item>
+        <item>iPhone 6</item>
+        <item>Galaxy 7 edge</item>
+        <item>Galaxy Note 4</item>
+        <item>Galaxy Note 3</item>
+    </string-array>
+</resources>
