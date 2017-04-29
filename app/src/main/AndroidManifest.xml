@@ -8,13 +8,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".StartActivity" ></activity>
+        <activity android:name=".StartActivity">
+        </activity>
         <activity android:name=".JoinActivity" />
         <activity android:name=".GiveRegisterActivity">
         </activity>
@@ -24,9 +26,6 @@
         <activity android:name=".GiveMainActivity"></activity>
         <activity android:name=".TakeMypageActivity" />
         <activity android:name=".ShowGiverListActivity">
-
         </activity>
-
     </application>
-
 </manifest>

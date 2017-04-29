@@ -14,51 +14,158 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="336dp"
-        android:layout_height="100dp"
+        android:layout_height="463dp"
         android:layout_weight="1"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="16dp"
+                android:inputType="textCapCharacters|textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="1"
+                android:text="Date: "
+                android:singleLine="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:inputType="textCapCharacters|textPersonName"
-            android:ems="10"
-            android:id="@+id/editText"
-            android:layout_weight="1"
-            android:text="Date: "
-            android:singleLine="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginLeft="16dp"
+                android:inputType="textCapCharacters|textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="1"
+                android:text="Location: "
+                android:singleLine="true" />
 
-        <Spinner
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinnerYear"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="16dp"
+                android:inputType="textCapCharacters|textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="1"
+                android:text="Time: "
+                android:singleLine="true" />
 
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="16dp"
+                android:inputType="textCapCharacters|textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="1"
+                android:text="Shots: "
+                android:singleLine="true" />
 
-        <Spinner
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinnerMonth"
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="16dp"
+                android:inputType="textCapCharacters|textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="1"
+                android:text="Cost: "
+                android:singleLine="true" />
+        </LinearLayout>
 
-        <Spinner
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinnerDay"
-            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" >
 
+            <DatePicker
+                android:id="@+id/datepicker"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="Country: "
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="City: "
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="Pin point: "
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent">
+                    <Spinner
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/countrySpinner"/>
+
+                    <Spinner
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/citySpinner"/>
+
+                    <Spinner
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pinPointSpinner"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <NumberPicker
+                android:layout_width="250dp"
+                android:layout_height="80dp" />
+
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:id="@+id/shootSpinner"/>
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:id="@+id/costSpinner"/>
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
-    </LinearLayout>
+
 
 
 </android.support.constraint.ConstraintLayout>

@@ -29,7 +29,8 @@
         android:textColorLink="@android:color/white"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
-        android:textColorHighlight="@android:color/white" />
+        android:textColorHighlight="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
 
     <EditText
         android:hint="성"
@@ -39,7 +40,8 @@
         android:textColor="@android:color/white"
         android:singleLine="true"
         android:textColorHint="@android:color/white"
-        android:textColorHighlight="@android:color/white" />
+        android:textColorHighlight="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
 
     <EditText
         android:hint="생년월일"
@@ -49,7 +51,8 @@
         android:singleLine="true"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
-        android:textColorHighlight="@android:color/white" />
+        android:textColorHighlight="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,7 +68,8 @@
             android:textColor="@android:color/white"
             android:singleLine="true"
             android:textColorHint="@android:color/white"
-            android:textColorHighlight="@android:color/white" />
+            android:textColorHighlight="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
 
         <Button
             android:id="@+id/emailAccept"
@@ -89,7 +93,8 @@
             android:singleLine="true"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
-            android:textColorHighlight="@android:color/white" />
+            android:textColorHighlight="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
 
         <Button
             android:id="@+id/numberAccept"
@@ -112,15 +117,14 @@
             android:textColor="@android:color/white"
             android:singleLine="true"
             android:textColorHint="@android:color/white"
-            android:textColorHighlight="@android:color/white" />
+            android:textColorHighlight="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
 
         <Button
             android:id="@+id/numberAccepted"
             android:background="@mipmap/ijbtn"
             android:layout_width="70dp"
             android:layout_height="32dp" />
-
-
 
     </LinearLayout>
 
