@@ -11,51 +11,60 @@
         <item>Galaxy Note 3</item>
     </string-array>
 
-    <string-array name="shootArray">
-        <item>100장</item>
-        <item>200장</item>
-        <item>300장</item>
-        <item>400장</item>
-        <item>500장</item>
+    <string-array name="dayArray">
+        <item>1일</item>
+        <item>2일</item>
+        <item>3일</item>
+        <item>4일</item>
+        <item>5일</item>
+        <item>6일</item>
+        <item>7일</item>
+        <item>8일</item>
+        <item>9일</item>
+        <item>10일</item>
+        <item>11일</item>
+        <item>12일</item>
+        <item>13일</item>
+        <item>14일</item>
+        <item>15일</item>
+        <item>16일</item>
+        <item>17일</item>
+        <item>18일</item>
+        <item>19일</item>
+        <item>20일</item>
+        <item>21일</item>
+        <item>22일</item>
+        <item>23일</item>
+        <item>24일</item>
+        <item>25일</item>
+        <item>26일</item>
+        <item>27일</item>
+        <item>28일</item>
+        <item>29일</item>
+        <item>30일</item>
     </string-array>
 
-    <string-array name="countryArray">
-        <item>태국</item>
-        <item>베트남</item>
-        <item>라오스</item>
-        <item>캄보디아</item>
-        <item>싱가포르</item>
-        <item>말레이시아</item>
-        <item>인도네시아</item>
+    <string-array name="monthArray">
+        <item>1월</item>
+        <item>2월</item>
+        <item>3월</item>
+        <item>4월</item>
+        <item>5월</item>
+        <item>6월</item>
+        <item>7월</item>
+        <item>8월</item>
+        <item>9월</item>
+        <item>10월</item>
+        <item>11월</item>
+        <item>12월</item>
     </string-array>
 
-    <string-array name="cityArray">
-        <item>방콕</item>
-        <item>치앙마이</item>
-        <item>파타야</item>
-        <item>코창</item>
-        <item>코사무이</item>
-        <item>크라비</item>
-        <item>코팡안</item>
-    </string-array>
-
-    <string-array name="pinPointArray">
-        <item>카오산 로드</item>
-        <item>방콕 왕궁</item>
-        <item>아시아티크</item>
-        <item>짜뚜짝 시장</item>
-        <item>룸피니 공원</item>
-        <item>왓 아룬</item>
-        <item>시암</item>
-        <item>RCA</item>
-    </string-array>
-
-    <string-array name="costArray">
-        <item>10$</item>
-        <item>20$</item>
-        <item>30$</item>
-        <item>40$</item>
-        <item>50$</item>
-        <item>60$</item>
+    <string-array name="yearArray">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
     </string-array>
 </resources>

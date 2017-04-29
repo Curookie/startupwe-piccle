@@ -24,7 +24,7 @@ public class GiveRegisterActivity extends AppCompatActivity {
     private ImageView giverImg;
     private Spinner cameraSelect;
     private GridView objGridView;
-    private Button Donebtn;
+    private Button Donebtn ;
 
 //    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override

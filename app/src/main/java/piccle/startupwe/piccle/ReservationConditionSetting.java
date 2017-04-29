@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class ReservationConditionSetting extends AppCompatActivity {
     private Spinner shootSelection, countrySelection, citySelection, pinPointSelection, costSelection;
+    private Button BconditionSetting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

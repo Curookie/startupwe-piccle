@@ -30,65 +30,12 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:text="메시지를 모두 읽으셨습니다."
+                    <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView3"
-                        android:layout_marginLeft="16dp"
-                        android:textSize="18sp" />
-
-                    <View
-                        android:layout_marginTop="20dp"
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dip"
-                        android:background="#FFaaaabb"
-                        />
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            app:srcCompat="@drawable/img_peo1"
-                            android:id="@+id/imageView2"
-                            android:layout_weight="1" />
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:text="메시지"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView"
-                                android:layout_marginLeft="16dp"
-                                android:layout_marginTop="16dp"
-                                android:layout_weight="1"
-                                android:textSize="24dip" />
-
-                            <TextView
-                                android:text="메시지"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView5"
-                                android:layout_marginLeft="16dp"
-                                android:layout_marginTop="16dp"
-                                android:layout_weight="1"
-                                android:textSize="24dip" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView2"
+                        android:background="@mipmap/messageimg" />
                 </LinearLayout>
-
 
 
                 <LinearLayout
@@ -96,6 +43,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView4"
+                            android:background="@mipmap/schedule" />
+
+                        <CalendarView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/calendarView" />
+                    </RelativeLayout>
 
                 </LinearLayout>
 
