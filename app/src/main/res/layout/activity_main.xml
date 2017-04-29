@@ -42,7 +42,6 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@mipmap/img_main4" />
-
     </ViewFlipper>
 
     <RelativeLayout
