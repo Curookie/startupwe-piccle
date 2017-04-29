@@ -106,7 +106,6 @@
         android:layout_weight="1"
         android:gravity="bottom">
 
-
         <Button
             android:text="메시지"
             android:layout_width="wrap_content"
