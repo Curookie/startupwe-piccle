@@ -5,25 +5,36 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Spinner;
+import android.app.DatePickerDialog;
+import android.app.DatePickerDialog.OnDateSetListener;
+import android.widget.NumberPicker;
+import android.widget.Toast;
 
 
 public class ReservationConditionSetting extends AppCompatActivity {
-    private Spinner daySelection, monthSelection, yearSelection;
+    private Spinner shootSelection, countrySelection, citySelection, pinPointSelection, costSelection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_condition_setting);
 
-        daySelection = (Spinner)findViewById(R.id.spinnerDay);
-        monthSelection = (Spinner)findViewById(R.id.spinnerMonth);
-        yearSelection = (Spinner) findViewById(R.id.spinnerYear);
+        shootSelection = (Spinner)findViewById(R.id.shootSpinner);
+        countrySelection = (Spinner)findViewById(R.id.countrySpinner);
+        citySelection = (Spinner)findViewById(R.id.citySpinner);
+        pinPointSelection = (Spinner)findViewById(R.id.pinPointSpinner);
+        costSelection = (Spinner) findViewById(R.id.costSpinner);
 
-        ArrayAdapter adapter1 = ArrayAdapter.createFromResource(this, R.array.dayArray, android.R.layout.simple_spinner_item);
-        ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this, R.array.monthArray, android.R.layout.simple_spinner_item);
-        ArrayAdapter adapter3 = ArrayAdapter.createFromResource(this, R.array.yearArray, android.R.layout.simple_spinner_item);
-        yearSelection.setAdapter(adapter3);
-        monthSelection.setAdapter(adapter2);
-        daySelection.setAdapter(adapter1);
+        ArrayAdapter shootAdapter = ArrayAdapter.createFromResource(this, R.array.shootArray, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter countryAdapter = ArrayAdapter.createFromResource(this, R.array.countryArray, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter cityAdapter = ArrayAdapter.createFromResource(this, R.array.cityArray, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter pinPointAdapter = ArrayAdapter.createFromResource(this, R.array.pinPointArray, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter costAdapter = ArrayAdapter.createFromResource(this, R.array.costArray, android.R.layout.simple_spinner_dropdown_item);
+
+        shootSelection.setAdapter(shootAdapter);
+        countrySelection.setAdapter(countryAdapter);
+        citySelection.setAdapter(cityAdapter);
+        pinPointSelection.setAdapter(pinPointAdapter);
+        costSelection.setAdapter(costAdapter);
     }
 }
