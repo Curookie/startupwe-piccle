@@ -1,6 +1,7 @@
 package piccle.startupwe.piccle;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.os.Build;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -22,6 +24,7 @@ public class GiveRegisterActivity extends AppCompatActivity {
     private ImageView giverImg;
     private Spinner cameraSelect;
     private GridView objGridView;
+    private Button Donebtn;
 
 //    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -32,6 +35,15 @@ public class GiveRegisterActivity extends AppCompatActivity {
         giverImg = (ImageView)findViewById(R.id.imageView);
         objGridView = (GridView)findViewById(R.id.gridView1);
         objGridView.setAdapter(new ImageAdapter(this));
+        Donebtn = (Button)findViewById(R.id.btnDone);
+
+        Donebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(GiveRegisterActivity.this, GiveMainActivity.class);
+                startActivity(intent);
+            }
+        });
 
 //        giverImg.setBackground(new ShapeDrawable(new OvalShape()));
 //        giverImg.setClipToOutline(true);

@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.content.Intent;
 import android.widget.Button;
-
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,8 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Gallery gallery = (Gallery)findViewById(R.id.gallery);
-        gallery.setAdapter(new ImageAdapter(this));
+        //Gallery gallery = (Gallery)findViewById(R.id.gallery);
+        //gallery.setAdapter(new ImageAdapter(this));
+        ViewFlipper viewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper);
+        viewFlipper.setAutoStart(true);
+        viewFlipper.setFlipInterval(3000);
+        viewFlipper.startFlipping();
 
         loginButton = (Button) findViewById(R.id.loginButton);
         startButton = (Button) findViewById(R.id.startButton);
@@ -62,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        gallery.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        /*gallery.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView adapterView, View view, int pos, long l) {
             }
@@ -71,6 +75,6 @@ public class MainActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView adapterView) {
 
             }
-        });
+        });*/
     }
 }

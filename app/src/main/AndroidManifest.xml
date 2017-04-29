@@ -10,12 +10,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 >>>>>>> 5d8b8bf281c8f74f2015af544cca67d10053a3a2
+=======
+>>>>>>> b8ffa326affe530db318217c55114dd082cb4fc7
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".StartActivity" ></activity>
@@ -34,8 +37,15 @@
         <activity android:name=".GiveMainActivity"></activity>
         <activity android:name=".TakeMypageActivity" />
         <activity android:name=".ShowGiverListActivity">
+<<<<<<< HEAD
 >>>>>>> 5d8b8bf281c8f74f2015af544cca67d10053a3a2
 
+=======
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+>>>>>>> b8ffa326affe530db318217c55114dd082cb4fc7
         </activity>
         <activity android:name=".GiveMainActivity"></activity>
         <activity android:name=".TakeMypageActivity" />

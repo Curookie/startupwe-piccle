@@ -107,24 +107,10 @@
         android:gravity="bottom">
 
         <Button
-            android:text="메시지"
+            android:text="등록하기"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnMessage"
-            android:layout_weight="1" />
-
-        <Button
-            android:text="일정"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnDate"
-            android:layout_weight="1" />
-
-        <Button
-            android:text="설정"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnSetting"
+            android:id="@+id/btnDone"
             android:layout_weight="1" />
     </LinearLayout>
 
