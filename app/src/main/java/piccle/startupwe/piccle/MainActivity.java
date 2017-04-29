@@ -34,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
 
         Button loginButton = (Button) findViewById(R.id.loginButton);
         Button startButton = (Button) findViewById(R.id.startButton);
+        Button joinButton = (Button) findViewById(R.id.joinButton);
+
+        joinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, JoinActivity.class);
+                startActivity(intent);
+            }
+        });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, StartActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this, StartActivity.class);
+//                startActivity(intent);
                 //intent.putExtra("CafeData",arrData.get(position));
             }
         });
