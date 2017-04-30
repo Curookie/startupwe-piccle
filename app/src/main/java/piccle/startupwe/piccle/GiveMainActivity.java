@@ -23,15 +23,30 @@ public class GiveMainActivity extends AppCompatActivity {
         TabHost=  (TabHost)findViewById(R.id.tabhost);
         TabHost.setup();
 
-        imgIcon = getResources().getDrawable(R.mipmap.btnaa, getTheme());
+        if(android.os.Build.VERSION.SDK_INT >= 21){
+            imgIcon = getResources().getDrawable(R.mipmap.btnaa, getTheme());
+        } else {
+            imgIcon = getResources().getDrawable(R.mipmap.btnaa);
+        }
+
         TabSpec= TabHost.newTabSpec("Message").setIndicator("",imgIcon).setContent(R.id.tab1);
         TabHost.addTab(TabSpec);
 
-        imgIcon = getResources().getDrawable(R.mipmap.btnbb, getTheme());
+        if(android.os.Build.VERSION.SDK_INT >= 21){
+            imgIcon = getResources().getDrawable(R.mipmap.btnbb, getTheme());
+        } else {
+            imgIcon = getResources().getDrawable(R.mipmap.btnbb);
+        }
+
         TabSpec= TabHost.newTabSpec("Plan").setIndicator("",imgIcon).setContent(R.id.tab2);
         TabHost.addTab(TabSpec);
 
-        imgIcon = getResources().getDrawable(R.mipmap.btncc, getTheme());
+        if(android.os.Build.VERSION.SDK_INT >= 21){
+            imgIcon = getResources().getDrawable(R.mipmap.btncc, getTheme());
+        } else {
+            imgIcon = getResources().getDrawable(R.mipmap.btncc);
+        }
+
         TabSpec= TabHost.newTabSpec("Setting").setIndicator("",imgIcon).setContent(R.id.tab3);
         TabHost.addTab(TabSpec);
 
