@@ -42,6 +42,7 @@ public class GiveRegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(GiveRegisterActivity.this, GiveMainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

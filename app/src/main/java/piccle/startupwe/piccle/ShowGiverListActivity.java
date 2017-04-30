@@ -61,6 +61,7 @@ public class ShowGiverListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ShowGiverListActivity.this, giverSelectedActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -69,14 +70,16 @@ public class ShowGiverListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ShowGiverListActivity.this, giverSelectedActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
         portfolio1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                porfolioDialog = new PorfolioDialog(ShowGiverListActivity.this);
-                porfolioDialog.show();
+                Intent intent = new Intent(ShowGiverListActivity.this, PortfolioDetailActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

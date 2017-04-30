@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         //Gallery gallery = (Gallery)findViewById(R.id.gallery);
         //gallery.setAdapter(new ImageAdapter(this));
         ViewFlipper viewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper);
+
         Animation fadeIn = new AlphaAnimation(0, 1);
         fadeIn.setInterpolator(new DecelerateInterpolator()); //add this
         fadeIn.setDuration(1500); //time in milliseconds
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, JoinActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -77,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            startActivity(intent);
+                startActivity(intent);
+                finish();
             }
         });
 

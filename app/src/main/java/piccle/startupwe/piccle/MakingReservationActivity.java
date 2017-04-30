@@ -24,6 +24,7 @@ public class MakingReservationActivity extends AppCompatActivity {
                 Intent intent = new Intent(MakingReservationActivity.this, MainActivity.class);
                 Toast.makeText(MakingReservationActivity.this,"예약이 완료되었습니다.",Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
             }
         });
     }

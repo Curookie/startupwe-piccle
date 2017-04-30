@@ -15,14 +15,15 @@ public class giverSelectedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_giver_selected);
 
-        BresReq = (ImageView) findViewById(R.id.requestReservation);
+        BresReq = (ImageView) findViewById(R.id.imageVie);
+        BresReq.setClickable(true);
         BresReq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(giverSelectedActivity.this, MakingReservationActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
-
     }
 }

@@ -67,6 +67,7 @@ public class JoinActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(JoinActivity.this, StartActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

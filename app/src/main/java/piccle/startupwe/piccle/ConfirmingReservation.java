@@ -16,5 +16,6 @@ public class ConfirmingReservation extends AppCompatActivity {
     public void confirmReservation(View view) {
         Intent intent = new Intent(ConfirmingReservation.this, LoginActivity.class);
         startActivity(intent);
+        finish();
     }
 }
