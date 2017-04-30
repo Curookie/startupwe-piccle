@@ -24,11 +24,11 @@
             android:layout_gravity="center_vertical">
 
             <ImageView
-                android:layout_width="230dp"
                 android:background="@mipmap/img_give"
                 android:id="@+id/btnGive"
                 android:layout_height="270dp"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_width="210dp" />
 
         </LinearLayout>
 
@@ -55,12 +55,11 @@
             android:layout_gravity="center_vertical">
 
             <ImageView
-                android:layout_width="230dp"
                 android:layout_height="270dp"
                 android:background="@mipmap/img_take"
                 android:id="@+id/btnTake"
                 android:layout_gravity="center"
-                />
+                android:layout_width="210dp" />
         </LinearLayout>
 
     </FrameLayout>

@@ -1,11 +1,14 @@
 package piccle.startupwe.piccle;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TabHost;
 
 public class GiveMainActivity extends AppCompatActivity {
@@ -13,12 +16,22 @@ public class GiveMainActivity extends AppCompatActivity {
     TabHost TabHost = null;
     TabHost.TabSpec TabSpec;
     Drawable imgIcon = null;
+    ImageView btnimg;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_give_main);
+
+        btnimg = (ImageView)findViewById(R.id.imgbtn);
+        btnimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(GiveMainActivity.this, GiverConform.class);
+                startActivity(intent);
+            }
+        });
 
         TabHost=  (TabHost)findViewById(R.id.tabhost);
         TabHost.setup();
