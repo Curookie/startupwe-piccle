@@ -12,11 +12,11 @@
     </string-array>
 
     <string-array name="shootArray">
+        <item>60장</item>
+        <item>80장</item>
         <item>100장</item>
+        <item>150장</item>
         <item>200장</item>
-        <item>300장</item>
-        <item>400장</item>
-        <item>500장</item>
     </string-array>
 
     <string-array name="countryArray">

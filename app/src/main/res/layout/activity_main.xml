@@ -4,8 +4,15 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:launchMode="singleTask"
     tools:context="piccle.startupwe.piccle.MainActivity"
     android:padding="0dp">
+
+    <Gallery xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
 
     <ViewFlipper
         android:id="@+id/viewFlipper"
@@ -42,6 +49,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@mipmap/img_main4" />
+
     </ViewFlipper>
 
     <RelativeLayout
