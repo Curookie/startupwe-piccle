@@ -14,7 +14,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        app:srcCompat="@mipmap/logojoin"
+        app:srcCompat="@mipmap/logo2"
         android:id="@+id/imageView5"
         android:layout_weight="1"
         android:layout_height="180dp"
@@ -175,34 +175,34 @@
                     android:layout_height="match_parent">
                     <Spinner
                         android:layout_width="170dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/countrySpinner"/>
+                        android:id="@+id/countrySpinner"
+                        android:layout_height="40dp" />
 
                     <Spinner
                         android:layout_width="170dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/citySpinner"/>
+                        android:id="@+id/citySpinner"
+                        android:layout_height="40dp" />
 
                     <Spinner
                         android:layout_width="170dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/pinPointSpinner"/>
+                        android:id="@+id/pinPointSpinner"
+                        android:layout_height="40dp" />
 
                 </LinearLayout>
 
             </LinearLayout>
             <NumberPicker
                 android:layout_width="250dp"
-                android:layout_height="80dp" />
+                android:layout_height="50dp" />
 
             <Spinner
                 android:layout_width="250dp"
-                android:layout_height="80dp"
-                android:id="@+id/shootSpinner"/>
+                android:id="@+id/shootSpinner"
+                android:layout_height="40dp" />
             <Spinner
                 android:layout_width="250dp"
-                android:layout_height="80dp"
-                android:id="@+id/costSpinner"/>
+                android:id="@+id/costSpinner"
+                android:layout_height="40dp" />
         </LinearLayout>
 
 

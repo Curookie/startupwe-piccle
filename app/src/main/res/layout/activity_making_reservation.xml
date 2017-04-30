@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:id="@+id/btnSetting"
         android:onClick="sendReservation"
-        android:background="#ffffffff"
+        android:background="#00ffffff"
         android:gravity="center_horizontal"
         android:layout_alignBottom="@+id/imageView"
         android:layout_margin="30dp"
