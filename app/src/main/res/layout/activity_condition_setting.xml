@@ -118,7 +118,8 @@
                 android:layout_width="250dp"
                 android:layout_height="100dp"
                 android:spinnersShown="true"
-                android:calendarViewShown="false" />
+                android:calendarViewShown="false"
+                android:headerBackground="#00CFB5" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -193,7 +194,7 @@
             </LinearLayout>
             <NumberPicker
                 android:layout_width="250dp"
-                android:layout_height="50dp" />
+                android:layout_height="60dp" />
 
             <Spinner
                 android:layout_width="250dp"

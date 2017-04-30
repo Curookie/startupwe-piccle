@@ -65,7 +65,7 @@ public class JoinActivity extends AppCompatActivity {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(JoinActivity.this, StartActivity.class);
+                Intent intent = new Intent(JoinActivity.this, HelloActivity.class);
                 startActivity(intent);
                 finish();
             }

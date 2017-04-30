@@ -52,7 +52,8 @@
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         android:textColorHighlight="@android:color/white"
-        android:backgroundTint="@android:color/white"/>
+        android:backgroundTint="@android:color/white"
+        android:inputType="number" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,7 +95,8 @@
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
             android:textColorHighlight="@android:color/white"
-            android:backgroundTint="@android:color/white"/>
+            android:backgroundTint="@android:color/white"
+            android:inputType="number" />
 
         <Button
             android:id="@+id/numberAccept"
@@ -118,7 +120,8 @@
             android:singleLine="true"
             android:textColorHint="@android:color/white"
             android:textColorHighlight="@android:color/white"
-            android:backgroundTint="@android:color/white"/>
+            android:backgroundTint="@android:color/white"
+            android:inputType="number" />
 
         <Button
             android:id="@+id/numberAccepted"
